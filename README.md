@@ -53,6 +53,16 @@ export default {
 }
 ```
 
+In any .vue component import in with `<client-only>`
+
+```vue
+<template>
+  <client-only>
+    <hamburger />
+  </client-only>
+</template>
+```
+
 ### *Usage*
 
 Use it in a `.vue` file

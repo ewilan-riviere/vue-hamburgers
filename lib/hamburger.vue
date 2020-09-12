@@ -26,7 +26,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-@import 'assets/hamburgers.min.css';
-</style>
