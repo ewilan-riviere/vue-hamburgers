@@ -30,6 +30,29 @@ import hamburger from 'hamburgers-vue'
 Vue.use(hamburger)
 ```
 
+### **For Nuxt.js**
+
+Create a plugin like `plugins/hamburgers-vue.js`
+
+```js
+import Vue from 'vue'
+import hamburger from 'hamburgers-vue'
+
+Vue.use(hamburger)
+```
+
+In `nuxt.config.js` import plugin
+
+```js
+export default {
+  // ...
+  plugins: [
+    { src: '@/plugins/hamburgers-vue', mode: 'client' },
+  ],
+  // ...
+}
+```
+
 ### *Usage*
 
 Use it in a `.vue` file
