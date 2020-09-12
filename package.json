@@ -1,6 +1,6 @@
 {
   "name": "hamburgers-vue",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "private": false,
   "author": {
     "name": "Ewilan 'EwieFairy' Rivière",
@@ -18,11 +18,9 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
-  "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11"
-  },
   "devDependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",

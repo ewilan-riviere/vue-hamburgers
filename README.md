@@ -1,4 +1,4 @@
-# **Vuepress Code Info**
+# **Hamburgers Vue**
 
 [![](https://img.shields.io/npm/v/hamburgers-vue.svg?style=flat-square&color=cb3837&logo=npm&logoColor=ffffff)](https://www.npmjs.com/package/vuepress-code-info)
 [![](https://img.shields.io/github/license/ewilan-riviere/vuepress-theme-useweb.svg?style=flat-square&color=f05032&logo=git&logoColor=ffffff)](https://github.com/ewilan-riviere/hamburgers-vue/blob/master/LICENSE)
@@ -51,6 +51,8 @@ Define type with prop `type`
 ```
 
 ### *API*
+
+Check all available type on [jonsuh.com/hamburgers](https://jonsuh.com/hamburgers/), use it in lowercase like this `type="arrow"`
 
 | Props        | Type    | Default | Describe                                                                   |
 |--------------|---------|---------|----------------------------------------------------------------------------|
