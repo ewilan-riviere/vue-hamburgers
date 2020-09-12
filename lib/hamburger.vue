@@ -11,6 +11,7 @@
 </template>
 
 <script>
+import 'hamburgers/dist/hamburgers.min.css'
 export default {
   name: 'Hamburger',
   props: {
@@ -36,5 +37,4 @@ code,
 .hamburger {
   vertical-align: middle;
 }
-@import 'assets/hamburgers';
 </style>

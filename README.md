@@ -6,7 +6,7 @@
 [![node.js](https://img.shields.io/static/v1?label=Node.js&message=v12.16&color=339933&style=flat-square&logo=node.js&logoColor=ffffff)](https://nodejs.org/en/)
 [![vue.js](https://img.shields.io/static/v1?label=Vue.js&message=v2.6&color=4FC08D&style=flat-square&logo=vue.js&logoColor=ffffff)](https://vuejs.org/)
 
-Display a burger for menu as component, fork from [github.com/jonsuh/hamburgers](https://github.com/jonsuh/hamburgers), you can choose hamburger animation with prop `type`.
+Display a burger for menu as component, fork from [github.com/jonsuh/hamburgers](https://github.com/jonsuh/hamburgers), you can choose hamburger animation with prop `type`. Check [jonsuh.com/hamburgers](https://jonsuh.com/hamburgers/) for examples.
 
 ## **Documentation**
 
