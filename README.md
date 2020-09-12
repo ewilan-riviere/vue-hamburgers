@@ -1,24 +1,61 @@
-# plugin
+# **Vuepress Code Info**
 
-## Project setup
-```
-yarn install
-```
+[![](https://img.shields.io/npm/v/hamburgers-vue.svg?style=flat-square&color=cb3837&logo=npm&logoColor=ffffff)](https://www.npmjs.com/package/vuepress-code-info)
+[![](https://img.shields.io/github/license/ewilan-riviere/vuepress-theme-useweb.svg?style=flat-square&color=f05032&logo=git&logoColor=ffffff)](https://github.com/ewilan-riviere/hamburgers-vue/blob/master/LICENSE)
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+[![node.js](https://img.shields.io/static/v1?label=Node.js&message=v12.16&color=339933&style=flat-square&logo=node.js&logoColor=ffffff)](https://nodejs.org/en/)
+[![vue.js](https://img.shields.io/static/v1?label=Vue.js&message=v2.6&color=4FC08D&style=flat-square&logo=vue.js&logoColor=ffffff)](https://vuejs.org/)
 
-### Compiles and minifies for production
-```
-yarn build
-```
+Display a burger for menu as component, fork from [github.com/jonsuh/hamburgers](https://github.com/jonsuh/hamburgers), you can choose hamburger animation with prop `type`.
 
-### Lints and fixes files
-```
-yarn lint
+## **Documentation**
+
+Install it with Yarn or NPM
+
+```bash
+yarn add -D hamburgers-vue
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+**OR**
+
+```bash
+npm i hamburgers-vue --save-dev
+```
+
+Import it, ES6 way, in `main.js` / `app.js` file
+
+```js
+import hamburger from 'hamburgers-vue'
+
+Vue.use(hamburger)
+```
+
+### *Usage*
+
+Use it in a `.vue` file
+
+```vue
+<template>
+  <div>
+    <hamburger />
+  </div>
+</template>
+```
+
+Define type with prop `type`
+
+```html
+<div>
+  <hamburger type="spring" />
+</div>
+```
+
+### *API*
+
+| Props        | Type    | Default | Describe                                                                   |
+|--------------|---------|---------|----------------------------------------------------------------------------|
+| type          | String  | '3dx'      | Type of hamburger animation |
+
+## **License**
+
+**MIT** &copy; [**@jonsuh**](https://github.com/jonsuh), [**@ewilan-riviere**](https://github.com/ewilan-riviere)
