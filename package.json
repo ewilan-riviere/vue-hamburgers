@@ -1,9 +1,14 @@
 {
-  "name": "plugin",
+  "name": "hamburger-vue",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": {
+    "name": "Ewilan 'EwieFairy' Rivière",
+    "email": "ewilan@dotslashplay.it",
+    "url": "https://github.com/ewilan-riviere"
+  },
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue serve example/main.js",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
