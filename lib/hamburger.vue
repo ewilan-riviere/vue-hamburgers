@@ -17,7 +17,7 @@ export default {
   props: {
     type: {
       type: String,
-      default: '3dx'
+      default: 'spring'
     },
     width: {
       type: [Number, String],

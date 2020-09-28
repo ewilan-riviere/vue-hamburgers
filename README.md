@@ -1,7 +1,7 @@
 # **Hamburgers Vue**
 
-[![](https://img.shields.io/npm/v/hamburgers-vue.svg?style=flat-square&color=cb3837&logo=npm&logoColor=ffffff)](https://www.npmjs.com/package/vuepress-code-info)
-[![](https://img.shields.io/github/license/ewilan-riviere/vuepress-theme-useweb.svg?style=flat-square&color=f05032&logo=git&logoColor=ffffff)](https://github.com/ewilan-riviere/hamburgers-vue/blob/master/LICENSE)
+[![](https://img.shields.io/npm/v/vue-hamburgers.svg?style=flat-square&color=cb3837&logo=npm&logoColor=ffffff)](https://www.npmjs.com/package/vue-hamburgers)
+[![](https://img.shields.io/github/license/ewilan-riviere/vuepress-theme-useweb.svg?style=flat-square&color=f05032&logo=git&logoColor=ffffff)](https://github.com/ewilan-riviere/vue-hamburgers/blob/master/LICENSE)
 
 [![node.js](https://img.shields.io/static/v1?label=Node.js&message=v12.16&color=339933&style=flat-square&logo=node.js&logoColor=ffffff)](https://nodejs.org/en/)
 [![vue.js](https://img.shields.io/static/v1?label=Vue.js&message=v2.6&color=4FC08D&style=flat-square&logo=vue.js&logoColor=ffffff)](https://vuejs.org/)
@@ -13,30 +13,30 @@ Display a burger for menu as component, fork from [github.com/jonsuh/hamburgers]
 Install it with Yarn or NPM
 
 ```bash
-yarn add -D hamburgers-vue
+yarn add -vue-hamburgers
 ```
 
 **OR**
 
 ```bash
-npm i hamburgers-vue --save-dev
+npm i vue-hamburgers --save
 ```
 
 Import it, ES6 way, in `main.js` / `app.js` file
 
 ```js
-import hamburger from 'hamburgers-vue'
+import hamburger from 'vue-hamburgers'
 
 Vue.use(hamburger)
 ```
 
 ### **For Nuxt.js**
 
-Create a plugin like `plugins/hamburgers-vue.js`
+Create a plugin like `plugins/vue-hamburgers.js`
 
 ```js
 import Vue from 'vue'
-import hamburger from 'hamburgers-vue'
+import hamburger from 'vue-hamburgers'
 
 Vue.use(hamburger)
 ```
@@ -47,7 +47,7 @@ In `nuxt.config.js` import plugin
 export default {
   // ...
   plugins: [
-    { src: '@/plugins/hamburgers-vue', mode: 'client' },
+    { src: '@/plugins/vue-hamburgers', mode: 'client' },
   ],
   // ...
 }
@@ -79,7 +79,7 @@ Define type with prop `type`
 
 ```html
 <div>
-  <hamburger type="spring" />
+  <hamburger type="3dx" />
 </div>
 ```
 
@@ -101,7 +101,7 @@ Check all available type on [jonsuh.com/hamburgers](https://jonsuh.com/hamburger
 
 | Props        | Type    | Default | Describe                                                                   |
 |--------------|---------|---------|----------------------------------------------------------------------------|
-| type          | String  | '3dx'      | Type of hamburger animation |
+| type          | String  | 'spring'      | Type of hamburger animation |
 | width | Number / String | 40 | Define width of hamburger |
 | height | Number / String | 4 | Define height of bars of hamburger |
 | spacing | Number / String | 1 | Define spacing between bars of hamburger |
