@@ -34,6 +34,10 @@ export default {
     padding: {
       type: [Number, String],
       default: 0
+    },
+    color: {
+      type: String,
+      default: '#000000'
     }
   },
   watch: {
@@ -49,7 +53,8 @@ export default {
         '--height': this.height + 'px',
         '--position': this.position + 'px',
         '--positionBefore': this.positionBefore + 'px',
-        '--positonAfter': this.positionAfter + 'px'
+        '--positonAfter': this.positionAfter + 'px',
+        '--color': this.color
       }
     },
     wrapperStyle() {
@@ -89,15 +94,18 @@ export default {
   width: var(--width) !important;
   height: var(--height) !important;
   top: var(--position);
+  background-color: var(--color);
 }
 .hamburger--spring .hamburger-inner::before {
   width: var(--width) !important;
   height: var(--height) !important;
   top: var(--positionBefore);
+  background-color: var(--color);
 }
 .hamburger--spring .hamburger-inner::after {
   width: var(--width) !important;
   height: var(--height) !important;
   top: var(--positonAfter);
+  background-color: var(--color);
 }
 </style>

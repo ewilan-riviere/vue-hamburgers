@@ -106,6 +106,7 @@ Check all available type on [jonsuh.com/hamburgers](https://jonsuh.com/hamburger
 | height | Number / String | 4 | Define height of bars of hamburger |
 | spacing | Number / String | 1 | Define spacing between bars of hamburger |
 | padding | Number / String | 0 | Set padding |
+| color | String | #000000 | Set color |
 
 ## **License**
 
