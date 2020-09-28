@@ -4,8 +4,8 @@
       type="spring"
       :width="30"
       :height="3"
-      :spacing="0.8"
-      :padding="5"
+      :spacing="1"
+      color="green"
     />
   </div>
 </template>

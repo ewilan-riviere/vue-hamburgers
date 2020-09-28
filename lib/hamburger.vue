@@ -59,7 +59,7 @@ export default {
     },
     wrapperStyle() {
       return {
-        '--padding': this.padding + 'px'
+        // '--padding': this.padding + 'px'
       }
     }
   },
@@ -85,27 +85,40 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+$hamburger-padding-x: unset;
+$hamburger-padding-y: unset;
+$hamburger-layer-width: 40px !default;
+$hamburger-layer-height: 4px !default;
+$hamburger-layer-spacing: 6px !default;
+$hamburger-layer-color: var(--color) !default;
+$hamburger-layer-border-radius: 4px !default;
+$hamburger-hover-opacity: 0.7 !default;
+$hamburger-active-layer-color: $hamburger-layer-color !default;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
+
+$hamburger-hover-use-filter: false !default;
+$hamburger-hover-filter: opacity(50%) !default;
+$hamburger-active-hover-filter: $hamburger-hover-filter !default;
+
+@import './hamburgers.scss';
+
 .hamburger {
   transition: all 0.3s;
-  padding: var(--padding) !important;
 }
 .hamburger--spring .hamburger-inner {
   width: var(--width) !important;
   height: var(--height) !important;
   top: var(--position);
-  background-color: var(--color);
 }
 .hamburger--spring .hamburger-inner::before {
   width: var(--width) !important;
   height: var(--height) !important;
   top: var(--positionBefore);
-  background-color: var(--color);
 }
 .hamburger--spring .hamburger-inner::after {
   width: var(--width) !important;
   height: var(--height) !important;
   top: var(--positonAfter);
-  background-color: var(--color);
 }
 </style>

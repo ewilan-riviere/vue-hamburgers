@@ -1,4 +1,4 @@
-# **Hamburgers Vue**
+# **Vue Hamburgers**
 
 [![](https://img.shields.io/npm/v/vue-hamburgers.svg?style=flat-square&color=cb3837&logo=npm&logoColor=ffffff)](https://www.npmjs.com/package/vue-hamburgers)
 [![](https://img.shields.io/github/license/ewilan-riviere/vuepress-theme-useweb.svg?style=flat-square&color=f05032&logo=git&logoColor=ffffff)](https://github.com/ewilan-riviere/vue-hamburgers/blob/master/LICENSE)
@@ -92,7 +92,7 @@ Define type with prop `type`
     :width="30"
     :height="3"
     :spacing="0.8"
-    :padding="5"
+    color="red"
   />
 </template>
 ```
@@ -104,9 +104,8 @@ Check all available type on [jonsuh.com/hamburgers](https://jonsuh.com/hamburger
 | type          | String  | 'spring'      | Type of hamburger animation |
 | width | Number / String | 40 | Define width of hamburger |
 | height | Number / String | 4 | Define height of bars of hamburger |
-| spacing | Number / String | 1 | Define spacing between bars of hamburger |
-| padding | Number / String | 0 | Set padding |
-| color | String | #000000 | Set color |
+| spacing | Number / String | 1 | Define spacing between bars of hamburger, reduce with '0.8' or increase with '1.2' |
+| color | String | #000000 | Set color with hexa code |
 
 ## **License**
 
