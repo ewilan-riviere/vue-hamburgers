@@ -85,11 +85,27 @@ Define type with prop `type`
 
 ### *API*
 
+```vue
+<template>
+  <hamburger
+    type="spring"
+    :width="30"
+    :height="3"
+    :spacing="0.8"
+    :padding="5"
+  />
+</template>
+```
+
 Check all available type on [jonsuh.com/hamburgers](https://jonsuh.com/hamburgers/), use it in lowercase like this `type="arrow"`
 
 | Props        | Type    | Default | Describe                                                                   |
 |--------------|---------|---------|----------------------------------------------------------------------------|
 | type          | String  | '3dx'      | Type of hamburger animation |
+| width | Number / String | 40 | Define width of hamburger |
+| height | Number / String | 4 | Define height of bars of hamburger |
+| spacing | Number / String | 1 | Define spacing between bars of hamburger |
+| padding | Number / String | 0 | Set padding |
 
 ## **License**
 

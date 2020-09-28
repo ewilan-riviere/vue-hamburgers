@@ -3,9 +3,10 @@
     class="hamburger"
     :class="[{ 'is-active': isActive }, `hamburger--${type}`]"
     @click="isActive = !isActive"
+    :style="wrapperStyle"
   >
     <div class="hamburger-box">
-      <div class="hamburger-inner"></div>
+      <div class="hamburger-inner" :style="hamburgerStyle"></div>
     </div>
   </div>
 </template>
@@ -17,12 +18,86 @@ export default {
     type: {
       type: String,
       default: '3dx'
+    },
+    width: {
+      type: [Number, String],
+      default: 40
+    },
+    height: {
+      type: [Number, String],
+      default: 4
+    },
+    spacing: {
+      type: [Number, String],
+      default: 1
+    },
+    padding: {
+      type: [Number, String],
+      default: 0
+    }
+  },
+  watch: {
+    spacing: function(newVal) {
+      // watch it
+      this.spacingUpdate(newVal)
+    }
+  },
+  computed: {
+    hamburgerStyle() {
+      return {
+        '--width': this.width + 'px',
+        '--height': this.height + 'px',
+        '--position': this.position + 'px',
+        '--positionBefore': this.positionBefore + 'px',
+        '--positonAfter': this.positionAfter + 'px'
+      }
+    },
+    wrapperStyle() {
+      return {
+        '--padding': this.padding + 'px'
+      }
+    }
+  },
+  mounted() {
+    this.spacingUpdate(this.spacing)
+  },
+  methods: {
+    spacingUpdate(multi) {
+      multi = parseFloat(multi)
+      this.position = 2 * multi
+      this.positionBefore = 10 * multi
+      this.positionAfter = 20 * multi
     }
   },
   data() {
     return {
-      isActive: false
+      isActive: false,
+      position: '2',
+      positionBefore: '10',
+      positionAfter: '20'
     }
   }
 }
 </script>
+
+<style scoped>
+.hamburger {
+  transition: all 0.3s;
+  padding: var(--padding) !important;
+}
+.hamburger--spring .hamburger-inner {
+  width: var(--width) !important;
+  height: var(--height) !important;
+  top: var(--position);
+}
+.hamburger--spring .hamburger-inner::before {
+  width: var(--width) !important;
+  height: var(--height) !important;
+  top: var(--positionBefore);
+}
+.hamburger--spring .hamburger-inner::after {
+  width: var(--width) !important;
+  height: var(--height) !important;
+  top: var(--positonAfter);
+}
+</style>
